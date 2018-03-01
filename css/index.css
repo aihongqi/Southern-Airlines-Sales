@@ -1,0 +1,810 @@
+/*公共属性*/
+#header,#ticket,div.page{
+    width:1100px;
+    margin: 0 auto;
+}
+
+/*页眉区域*/
+#header{
+    padding:30px 0 0 0;
+}
+    /*左侧logo*/
+#logo{
+    width:262px;
+    height:41px;
+    float:left;
+    box-sizing: border-box;
+    padding:0 10px;
+}
+#logo img:nth-child(1){
+    height:41px;
+    margin-right:3px;
+}
+#logo img:nth-child(2){
+    height:41px;
+}
+    /*end_左侧logo*/
+    /*右侧登录*/
+        /*登录等按钮*/
+#sign{
+    float:right;
+    padding-right: 10px;
+}
+#sign li{
+    float:left;
+}
+#sign li:nth-child(1),#sign li:nth-child(3){
+    padding-right: 18px;
+}
+#sign li:nth-child(2) a{
+    color:#e61432;
+    border-right: 1px solid #c9caca;
+    padding-right: 4px;
+}
+#sign li:nth-child(3){
+    border-right: 1px solid #dfdfe0;
+    border-left:1px solid #dfdfe0;
+    padding-left:4px;    
+}
+#sign li:nth-child(3) a{
+    color:#b5b6b7;
+}
+#sign li:nth-child(4){
+    border-left: 1px solid #1f1f1f;
+    padding:0 6px 0 4px;
+}
+#sign li:nth-child(4) a,#sign li:nth-child(5) a{
+    color:#505050;
+}
+#sign li:nth-child(5) a{
+    padding-left: 14px;
+    background: url(../images/iconlist_01.png) no-repeat 0 3px;
+}
+        /*end_登录等按钮*/
+        /*搜索框*/
+#search{
+    padding-top: 10px;
+}
+#search input{
+    width:274px;
+    height:22px;
+    border:1px solid #d8d8d8;
+    border-top-color: #bfbfbf;
+    float:left;
+    box-sizing: border-box;
+}
+#search ::-webkit-input-placeholder{
+    color:#b1b1b1;
+    font-size:12px;
+    padding:4px;
+}
+#search button{
+    width:26px;
+    height:22px;
+    background:#0080c1 url(../images/iconlist_01.png) no-repeat -29px -30px;
+    float:left;
+    cursor: pointer;
+}
+        /*end_搜索框*/
+    /*end_右侧登录*/
+    /*顶部导航*/
+#header nav{
+    padding-top: 36px;
+}
+#header nav li{
+    width:156px;
+    float:left;
+    text-align: center;
+}
+#header nav li a{
+    line-height: 36px;
+    font-size: 16px;
+    color:#067fb0;
+}
+#header nav li:nth-child(4) a{
+    color:#ca1829;
+}
+#header nav li:nth-child(4) i {
+    margin:0 0 2px 4px;
+    display: inline-block;
+    width: 7px;
+    height:4px;
+    background: url(../images/iconlist_01.png) no-repeat -20px 0;
+}
+    /*end_顶部导航*/
+
+/*banner区域*/
+#banner{
+    border-top:1px solid #007caf;
+    overflow: hidden;
+}
+/*end_banner*/
+
+/*机票查询*/
+    /*左侧图片*/
+#ticket > div{
+    float:left;
+}
+    /*end_左侧图片*/
+    /*单程+往返选择*/
+#ticket_check{
+    padding:10px 0 0 46px;
+}
+#ticket_check ul.list_1 li{
+    float: left;
+}
+#ticket_check ul.list_1 li input{
+    background:transparent;
+    border: 1px solid #ababab;
+}
+#ticket_check ul.list_1 li label,#ticket_check ul.list_1 li a{
+    font-size: 14px;
+    color:#021c55;
+    padding-right: 20px;
+}
+    /*end_单程+往返选择*/
+    /*城市+时间选项*/
+#city_modle{
+    width:476px;
+    height:170px;
+    padding-top:10px;
+    float: left;
+}
+#city_modle div.ui_input{
+    margin-right:20px;
+}
+#city_modle div.city_speace{
+    margin-bottom: 20px;
+}
+div.ui_input{
+    font-size: 14px;
+    float: left;
+}
+div.ui_input input{
+    width:210px;
+    height:28px;
+    border:1px solid #aaaaaa;
+    padding-left: 4px;
+    font-size: 14px;
+}
+div.ui_input > div{
+    position: relative;
+    width: 216px;
+}
+        /*icon_出发城市*/
+div.ui_input p.ico_city{
+    position: absolute;
+    width:22px;
+    height: 18px;
+    background:url(../images/iconlist_02.png) no-repeat;
+    top:6px;
+    right: 8px;
+    cursor: pointer;
+}
+        /*end_icon_出发城市*/
+        /*icon_到达城市*/
+div.ui_input p.to_city{
+    background-position: -52px 0;
+}
+        /*end_icon_到达城市*/
+        /*icon_出发日期和回城日期*/
+div.ui_input p.from_date,div.ui_input p.to_date{
+    background-position:1px -49px; 
+}
+        /*end_icon_出发日期和回城日期*/
+    /*end_城市+时间选项*/
+
+    /*右侧人数选择*/
+        /* 上：人数选项 */
+#choose_per{
+    padding-top: 10px;
+}
+#choose_per,#choose_per ul li{
+    float:left;
+}
+#choose_per ul li{
+    margin-right: 10px;
+}
+#choose_per ul li p{
+    font-size: 14px;
+}
+#choose_per div.choose_mod{
+    width:78px;
+    height:24px;
+    border:1px solid #ccc;
+    cursor: pointer;
+}
+#choose_per div.choose_mod div{
+    width: 29px;
+    height: 25px;
+    border-left: 1px solid #ccc;
+    float: right;
+}
+#choose_per div.choose_mod:hover,#choose_per div.choose_mod:hover div{
+    border-color:#999;
+}
+#choose_per b{
+    display: block;
+    width:0;
+    height:0;
+    border:6px solid #ccc;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    position: relative;
+    top:10px;
+    left:8px;
+}
+#choose_per div.choose_mod:hover div b{
+    border-top-color: #999;
+}
+        /* end_上：人数选项 */
+        /* 下：提交按钮 */
+#choose_per div.submit button{
+    width:145px;
+    height: 50px;
+    background: url(../images/iconlist_02.png) no-repeat -52px -48px;
+    cursor: pointer;
+    margin: 36px 0 0 54px;
+}
+        /* end_下：提交按钮 */
+    /*end_右侧人数选择*/
+/*end_机票查询*/
+
+/*内容区域*/
+    /*必备攻略*/
+#strategy div.inpage{
+    height:862px;
+    background:url(../Images/in_strategy_bg.png) no-repeat;
+}
+#strategy{
+    position: relative;
+}
+#strategy div.page{
+    padding-top: 189px;
+}
+        /*顶部国内外切换按钮*/
+#top_tab{
+    width:100%;
+    height:70px;
+    position: absolute; 
+    background: rgba(0,142,211,0.7)
+}
+#top_tab ul{
+    width:1100px;
+    margin: 0 auto;
+}
+#top_tab li{
+    float:left;
+    position: relative;
+}
+            /*选中状态的按钮*/
+#top_tab li.tab_current{
+    background: rgba(91,194,219,0.7);
+}
+#top_tab li.tab_current a b{
+    background: rgba(255,255,255,0.3);
+    height: 10px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+            /*end_选中状态的按钮*/
+        /*end_顶部国内外切换按钮*/
+
+        /***公共标题：必备攻略***/
+div.page header.title{
+    width:995px;
+    height:41px;
+    margin: 0 auto;
+    background:url(../images/title.png) no-repeat 0 0;
+}
+        /* end_公共标题：必备攻略 */
+
+        /*国内页面*/
+            /*城市选项按钮*/
+#strategy div.inpage ul.st_tab{
+    width: 580px;
+    padding-top: 40px;
+    margin: 0 auto;
+}
+#strategy div.inpage ul.st_tab li{
+    float: left;
+    width:100px;
+    height: 89px;
+    cursor: pointer;
+    padding:0 20px;
+}
+                /*默认显示的图片*/
+#strategy div.inpage li.tab01{
+    background: url(../images/in/hz_icon.png) no-repeat center;
+}
+#strategy div.inpage li.tab02{
+    background: url(../images/in/sh_icon.png) no-repeat center;
+}
+#strategy div.inpage li.tab03{
+    background: url(../images/in/nj_icon.png) no-repeat center;
+}
+#strategy div.inpage li.tab04{
+    background: url(../images/in/hs_icon.png) no-repeat center;
+}
+                /*end_默认显示的图片*/
+                /*选中后显示的图片*/
+#strategy div.inpage li.tab01.ch01{
+    background: url(../images/in/hz_icon_choose.png) no-repeat center;
+}
+#strategy div.inpage li.tab02.ch01{
+    background: url(../images/in/sh_icon_choose.png) no-repeat center;
+}
+#strategy div.inpage li.tab03.ch01{
+    background: url(../images/in/nj_icon_choose.png) no-repeat center;
+}
+#strategy div.inpage li.tab04.ch01{
+    background: url(../images/in/hs_icon_choose.png) no-repeat center;
+}
+                /*end_选中后显示的图片*/
+            /*end_城市选项按钮*/
+            /*图文区域*/
+#strategy div.cont_bg{
+    background: url(../images/strategy_border.png) no-repeat center 20px;
+    /* overflow: hidden; */
+    height:399px;
+    padding-top: 27px;
+}
+#strategy ul.cont{
+    height: 399px;
+    margin-top:-8px;
+    display:none;
+}
+                /*显示内容：当前选中的城市*/
+#strategy ul.cont.city_current{
+    display:block;
+}
+                /*end_显示内容：当前选中的城市*/
+                /*左侧大图*/
+#strategy li.pic{
+    width: 547px;
+    height: 273px;
+    padding: 76px 0 0 112px;
+    float: left;
+}
+                /*end_左侧大图*/
+                /*右侧文字*/
+#strategy li.txt{
+    float: left;
+    padding:52px 0 0 38px;
+}
+#strategy li.txt span{
+    display: block;
+    width: 290px;
+    color: #fff;
+    padding-top:0px;
+    font-size: 16px;
+    padding: 0 20px;
+    line-height:28px;
+}
+#strategy li.txt h1{
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom:14px;
+}
+                /*end_右侧文字*/
+                /*按钮：点击更多*/
+#strategy li.txt a.btn_more{
+    background: url(../images/btn_more.png) no-repeat center;
+    width: 330px;
+    height: 90px;
+    display: block;
+    margin-top: 32px;
+}
+                /*end_按钮：点击更多*/
+            /*end_图文区域*/
+        /*end_国内页面*/
+    /*end_必备攻略*/
+
+    /*精彩图集*/
+#nicepic div.inpage{
+    height:1121px;
+    background: url(../Images/in_nicepic_bg.png) no-repeat;
+}
+#nicepic header.title{
+    background-position:0 -60px;
+}
+        /*文字导航*/
+ul.np_tnav{
+    padding-top: 56px;
+    width: 792px;
+    margin: 0 auto;
+}
+ul.np_tnav li{
+    width:244px;
+    height:56px;
+    float:left;
+    background:url(../images/np_tnav.png) no-repeat;
+    margin-right: 30px;
+}
+ul.np_tnav li.np_tnav02{
+    background-position: -244px -56px;
+}
+ul.np_tnav li.np_tnav03{
+    background-position: -488px -56px;
+    margin-right: 0;
+}
+        /*end_文字导航*/
+        /*图片导航*/
+dl.np_pnav{
+    width:972px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+dl.np_pnav dd{
+    float: left;
+    width:162px;
+    height:162px;
+    padding:20px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+dl.np_pnav dd img{
+    display: block;
+    margin: 0 auto;
+}
+dl.np_pnav dt{
+    position: absolute;
+}
+        /*end_图片导航*/
+        /*大图+文字*/
+div.np_bpic{
+    margin-top: 10px;
+    background: url(../images/np_bborder.png) no-repeat center;
+    overflow: hidden;
+    height: 706px;
+}
+div.np_bpic > div{
+    width:940px;
+    margin: 0 auto;
+    padding-top: 16px;
+    text-align: center;
+    display: none;
+}
+div.np_bpic p{
+    font-size: 20px;
+    color: #fff;
+    margin:36px 0 10px;
+}
+div.np_bpic div.np_current{
+    display: block;
+}
+        /*end_大图+文字*/
+    /*end_精彩图集*/
+
+    /*本月爆款*/
+#hot div.inpage{
+    height: 1360px;
+    background: url(../images/in_hot_bg.png) no-repeat;
+}
+#hot div.page header.title{
+    background-position:0 -121px;
+}
+        /*顶部大框内容*/
+#hot div.tophot{
+    background: url(../images/pro_border_list.png) no-repeat;
+    width: 993px;
+    height: 330px;
+    margin: 0 auto;
+    margin-top: 37px;
+    color: #fff;
+}
+            /*左侧内容*/
+                /*背景*/
+#hot div.leftbg{
+    background: url(../images/in/tophot_left_bg.png) no-repeat 3px 9px;
+    width: 482px;
+    height: 315px;
+    text-align: center;
+    margin-left: 10px;
+    padding-top: 10px;
+    float: left;
+}
+                /*end_背景*/
+                /*标题文本*/
+#hot div.leftbg h1{
+    font-size: 30px;
+    margin-top: 34px;
+}
+#hot div.leftbg h2{
+    font-size: 24px;
+    margin-top: 2px;
+}
+#hot div.leftbg h4{
+    margin-top: 2px;
+}
+                /*end_标题文本*/
+                /*价格*/
+#hot div.leftbg ul{
+    width: 157px;
+    height: 60px;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+#hot div.leftbg ul li{
+    float: left;
+    font-size: 44px;
+    color: #ffd557;
+    margin-left: 10px;
+}
+#hot div.leftbg ul li:not(:nth-child(2)){
+    font-size: 14px;
+    padding-top: 30px;
+}
+                /*end_价格*/
+                /*按钮*/
+#hot div.leftbg a{
+    width: 244px;
+    height: 108px;
+    display: block;
+    margin: 0 auto;
+    background: url(../images/buybtn_list.png) no-repeat;
+    margin-top: -17px;
+}
+                /*end_按钮*/
+            /*end_左侧内容*/
+            /*右侧内容*/
+#hot ul.rightbg{
+    width:480px;
+    float:right;
+    padding-top: 30px;
+}
+#hot ul.rightbg li{
+    margin: 0 0 18px 20px;
+}
+                /*箭头*/
+#hot ul.rightbg div{
+    width: 36px;
+    height: 40px;
+    background:url(../images/hot_arrow.png) no-repeat 0 8px; 
+    float: left;
+}
+                /*end_箭头*/
+#hot ul.rightbg h1{
+    font-size: 24px;
+    color:#ffd57f;
+}
+#hot ul.rightbg h3{
+    font-size: 14px;
+    padding-top: 4px;
+}
+            /*end_右侧内容*/
+        /*end_顶部大框内容*/
+        /*6个具体目的地*/
+#hot ul.sist{
+    width:1011px;
+    margin: 0 auto;
+}
+            /*产品背景框*/
+#hot ul.sist li{
+    float:left;
+}
+#hot ul.sist > li{
+    width: 317px;
+    height: 397px;
+    background: url(../images/pro_border_list.png) no-repeat -1013px 30px;
+    margin: 0 10px;
+    padding-top: 30px;
+}
+            /*end_产品背景框*/
+#hot ul.sist > li > img{
+    margin: 3px 0 0 4px;
+}
+#hot ul.sist h1,#hot ul.sist h3{
+    color:#fff;
+    font-size: 18px;
+    margin-left: 8px;
+}
+#hot ul.sist h1{
+    margin-top: 6px;
+}
+#hot ul.sist h3{
+    font-size: 13px;
+}
+            /*价格+按钮*/
+#hot ul.sist > li > div{
+    margin: 34px 0 0 10px;
+}
+#hot ul.prise{
+    float:left;
+}
+#hot ul.prise li{
+    color: #ffd557;
+    padding-top: 34px;
+}
+#hot ul.prise li:nth-child(2){
+    font-size: 44px;
+    padding-top: 0;
+}
+#hot ul.sist a{
+    width: 148px;
+    height:45px;
+    background: url(../images/buybtn_list.png) no-repeat 0 -108px;
+    float: right;
+    margin: 5px 10px 0 0;
+}
+
+            /*end_价格+按钮*/
+        /*end_6个具体目的地*/
+    /*end_本月爆款*/
+
+    /*热门推荐*/
+#recommend div.inpage{
+    height: 803px;
+    background: url(../images/in_recommend_bg.png) no-repeat;
+}
+#recommend header.title{
+    background-position: 0 -182px;
+}
+        /*4个具体目的地*/
+#recommend ul.sist{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 65px;
+    padding-left: 10px;
+}
+#recommend ul.sist > li{
+    float:left;
+    background: url(../images/pro_border_list.png) no-repeat -1350px 0;
+    width: 240px;
+    height: 260px;
+    margin: 0 5px;
+}
+#recommend ul.sist img{
+    margin: 2px 0 0 2px;
+}
+#recommend ul.sist h1{
+    color: #fff;
+    font-size: 16px;
+    padding-top: 4px;
+}
+#recommend ul.sist h3{
+    color: #fff;
+    font-size: 12px;
+}
+            /*价格+按钮*/
+#recommend ul.sist ul{
+    padding: 12px 0 0 10px;
+}          
+#recommend ul.sist ul li{
+    float:left;
+    color: #ffd557;
+    padding-top: 24px;
+}
+#recommend ul.sist ul li:nth-child(2){
+    font-size: 34px;
+    padding-top: 0;
+}
+#recommend ul.sist a{
+    float: right;
+    width: 110px;
+    height: 33px;
+    background: url(../images/buybtn_list.png) no-repeat -237px -108px;
+    margin: 6px 10px 0 0;
+}
+            /*end_价格+按钮*/
+        /*end_4个具体目的地*/
+#recommend header.line{
+    background-position: 0 -274px;
+    margin-top: 40px;
+}
+        /*热门酒店+签证*/
+#recommend li.hotel,#recommend li.passport{
+    float:left;
+    width: 477px;
+    height: 234px;
+    margin: 40px 0 0 24px;
+}
+#recommend li.hotel{
+    background: url(../images/hot_hotel.png) no-repeat;
+    margin-left: 58px;
+}
+#recommend li.passport{
+    width: 489px;
+    background: url(../images/hot_passport.png) no-repeat;
+}
+#recommend ul.server a{
+    display: block;
+    width: 477px;
+    height:234px;
+}
+#recommend ul.server span{
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #008ac9;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+#recommend ul.server h4{
+    line-height: 36px;
+    font-size: 34px;
+    color: #fff;
+    width: 68px;
+    padding:23px 0 0 25px;
+}
+        /*end_热门酒店+签证*/
+    /*end_热门推荐*/
+    /*公共文本：价格仅供参考*/
+div.page p{
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 30px;
+}
+    /*end_公共文本：价格仅供参考*/
+/*end_内容区域*/
+
+/*页脚区域*/
+#footer ul.reserve{
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+#footer ul.reserve li{
+    float: left;
+    margin: 0 26px;
+}
+#footer ul.reserve p{
+    width: 68px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+}
+#footer div.copr{
+    margin-top: 34px;
+    padding: 24px 0;
+    background: #ececec;
+}
+#footer div.copr div.bg{
+    width: 1100px;
+    margin: 0 auto;
+    color: #666;
+}
+#footer div.copr p,#footer div.copr ul li{
+    float: left;
+}
+#footer div.copr ul{
+    float: right;
+}
+#footer div.copr li a{
+    color: #666;
+}
+#footer div.copr li{
+    border-right: 1px solid #666;
+    padding: 0 8px;
+}
+#footer div.copr li:last-child{
+    border: none;
+}
+/*end_页脚区域*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

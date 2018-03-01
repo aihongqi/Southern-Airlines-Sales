@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="ch-zn">
+<head>
+    <meta charset="UTF-8">
+    <title>本月爆款 南航甄选 超值推荐</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+    <!-- 页眉区域 -->
+    <header id="header" class="clear">
+        <div class="clear">
+            <!-- 左侧logo -->
+            <div id="logo">
+                <img src="images/logo.png">
+                <img src="images/logo_st.png">
+            </div>
+            <!-- end_左侧logo -->
+            <!-- 右侧登录 -->
+            <div id="sign">
+                <ul class="clear">
+                    <li>Hi，欢迎来到南方航空</li>
+                    <li>
+                        <a href="#">登 录</a>
+                    </li>
+                    <li>
+                        <a href="#">注 册</a>
+                    </li>
+                    <li>
+                        <a href="#">收藏</a>
+                    </li>
+                    <li>
+                        <a href="#">搜索</a>
+                    </li>
+                </ul>
+                <!-- 搜索框 -->
+                <div id="search">
+                    <form action="#" class="clear">
+                        <input type="text" placeholder="搜索目的地/游记/产品/用户/图说/计划">
+                        <button></button>
+                    </form>
+                </div>
+                <!-- end_搜索框 -->
+            </div>
+            <!-- end_右侧登录 -->
+        </div>
+        <!-- 顶部导航 -->
+        <nav>
+            <ul class="clear">
+                <li>
+                    <a href="#">首页</a>
+                </li>
+                <li>
+                    <a href="#">预订行程</a>
+                </li>
+                <li>
+                    <a href="#">服务大厅</a>
+                </li>
+                <li>
+                    <a href="#">
+                        南航假期
+                        <i></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">明珠会员</a>
+                </li>
+                <li>
+                    <a href="#">优惠信息</a>
+                </li>
+                <li>
+                    <a href="#">出行帮助</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- end_顶部导航 -->
+    </header>
+    <!-- end_页眉 -->
+
+    <!-- banner区域 -->
+    <div id="banner">
+        <img src="images/banner.png">
+    </div>
+    <!-- end_banner -->
+
+    <!-- 机票查询区域 -->
+    <div id="ticket" class="clear">
+        <!-- 左侧图片 -->
+        <div>
+            <img src="images/ticket_iq.png">
+        </div>
+        <!-- end_左侧图片 -->
+        <div id="ticket_check">
+            <form action="#" method="post">
+                <!-- 单程+往返选择 -->
+                <ul class="list_1 clear">
+                    <li>
+                        <input type="radio" name="way" value="one_way" id="oneway">
+                        <label for="oneway">单程</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="way" value="go_back" id="goback" checked>
+                        <label for="goback">往返程</label>
+                    </li>
+                    <li>
+                        <a href="#">联程</a>
+                    </li>
+                </ul>
+                <!-- end_单程+往返选则 -->
+                <!-- 城市+时间选项 -->
+                <div id="city_modle">
+                    <!-- 出发城市 -->
+                    <div class="ui_input city_speace">
+                        <label>出发城市</label>
+                        <div>
+                            <input type="text">
+                            <p class="from_city ico_city"></p>
+                        </div>
+                    </div>
+                    <!-- end_出发城市 -->
+                    <!-- 到达城市 -->
+                    <div class="ui_input city_speace">
+                        <label>到达城市</label>
+                        <div>
+                            <input type="text">
+                            <p class="to_city ico_city"></p>
+                        </div>
+                    </div>
+                    <!-- end_到达城市 -->
+                    <!-- 出发日期 -->
+                    <div class="ui_input">
+                        <label>出发日期</label>
+                        <div>
+                            <input type="text">
+                            <p class="from_date ico_city"></p>
+                        </div>
+                    </div>
+                    <!-- end_出发日期 -->
+                    <!-- 回程日期 -->
+                    <div class="ui_input">
+                        <label>回程日期</label>
+                        <div>
+                            <input type="text">
+                            <p class="to_date ico_city"></p>
+                        </div>
+                    </div>
+                    <!-- end_回程日期 -->
+                </div>
+                <!-- end_城市+时间选项 -->
+                <!-- 右侧人数选择 -->
+                <div id="choose_per">
+                    <!-- 上：人数选项 -->
+                    <ul class="clear">
+                        <!-- 成人 -->
+                        <li>
+                            <p>成人(≥ 12岁)</p>
+                            <div class="choose_mod">
+                                <div>
+                                    <b></b>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- end_成人 -->
+                        <!-- 儿童 -->
+                        <li>
+                            <p>儿童(2-11岁)</p>
+                            <div class="choose_mod">
+                                <div>
+                                    <b></b>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- end_儿童 -->
+                        <!-- 婴儿 -->
+                        <li>
+                            <p>婴儿(< 2岁)</p>
+                            <div class="choose_mod">
+                                <div>
+                                    <b></b>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- end_婴儿 -->
+                    </ul>
+                    <!-- end_上：人数选项 -->
+                    <!-- 下：提交按钮 -->
+                    <div class="submit">
+                        <button></button>
+                    </div>
+                    <!-- end_下：提交按钮 -->
+                </div>
+                <!-- end_右侧人数选择 -->
+            </form>
+        </div>
+    </div>
+    <!-- end_机票查询 -->
+
+    <!-- 内容区域 -->
+    <section id="main">
+        <!-- 必备攻略 -->
+        <div id="strategy">
+            <!-- 顶部国内外切换按钮 -->
+            <div id="top_tab">
+			    <ul>
+                    <!-- 国外推荐 -->
+                    <li class="tab_out">
+                        <a href="#">
+                            <img src="images/tab_out.png">
+                            <b></b>
+                        </a>
+                    </li>
+                    <!-- end_国外推荐 -->
+                    <!-- 国内推荐 -->
+                    <li class="tab_in tab_current">
+                        <a href="#">
+                            <img src="images/tab_in.png">
+                            <b></b>
+                        </a>
+                    </li>
+                    <!-- end_国内推荐 -->
+                </ul>
+            </div>
+            <!-- end_顶部按钮 -->
+			<!-- 国外页面 -->
+            <div class="outpage">
+                <!-- 将div.page header.title拷贝到此处即可完成国外页面的标题 -->
+            </div>
+            <!-- end_国外页面 -->
+			<!-- 国内页面 -->
+			<div class="inpage">
+                <div class="page">
+                    <!-- 标题 -->
+                    <header class="title"></header>
+                    <!-- end_标题 -->
+                    <!-- 选项按钮 -->
+                    <ul class="st_tab clear">
+                        <li class="tab01 ch01"></li>
+                        <li class="tab02"></li>
+                        <li class="tab03"></li>
+                        <li class="tab04"></li>
+                    </ul>
+                    <!-- end_选项按钮 -->
+                    <!-- 图文区域 -->
+                    <div class="cont_bg">
+                        <!-- 杭州 -->
+                        <ul class="cont city_current">
+                            <!-- 左侧图片 -->
+                            <li class="pic">
+                                <img src="images/in/bhz.png">
+                            </li>
+                            <!-- end_左侧图片 -->
+                            <!-- 右侧文本+按钮 -->
+                            <li class="txt">
+                                <!-- 文本 -->
+                                <span>
+                                    <h1>杭州西湖郭庄</h1>
+                                    郭庄，是中国浙江杭州的园林之一，现为浙江省文物保护单位。郭庄位于杭州西山路卧龙桥畔，与西湖十景之一的“曲院风荷”公园相邻。原名“端友别墅”，建于清光绪三十三年（1907年）。最初的主人为杭州商人宋端甫，因此庄园俗称宋庄。
+                                </span>
+                                <!-- end_文本 -->
+                                <!-- 按钮：点击更多 -->
+                                <a href="#" class="btn_more"></a>
+                                <!-- end_按钮：点击更多 -->
+                            </li>
+                            <!-- end_右侧文本+按钮 -->
+                        </ul>
+                        <!-- end_杭州 -->
+                        <!-- 上海 -->
+                        <ul class="cont">
+                            <!-- 左侧图片 -->
+                            <li class="pic">
+                                <img src="images/in/bsh.png">
+                            </li>
+                            <!-- end_左侧图片 -->
+                            <!-- 右侧文本+按钮 -->
+                            <li class="txt">
+                                <!-- 文本 -->
+                                <span>
+                                    <h1>上海外滩</h1>
+                                     龙井虾仁选用活大河虾，配以清明节前后的龙井新茶烹制，在杭菜中堪称一绝。据说，清乾隆皇帝下江南时，正好是清明节。他游览了西湖龙井，茶农将新茶进献给他，他带回行宫，御厨在炒“玉白虾仁”时放进茶叶，烧出了这道名菜。
+                                </span>
+                                <!-- end_文本 -->
+                                <!-- 按钮：点击更多 -->
+                                <a href="#" class="btn_more"></a>
+                                <!-- end_按钮：点击更多 -->
+                            </li>
+                            <!-- end_右侧文本+按钮 -->
+                        </ul>
+                        <!-- end_上海 -->
+                        <!-- 南京 -->
+                        <ul class="cont">
+                            <!-- 左侧图片 -->
+                            <li class="pic">
+                                <img src="images/in/bnj.png">
+                            </li>
+                            <!-- end_左侧图片 -->
+                            <!-- 右侧文本+按钮 -->
+                            <li class="txt">
+                                <!-- 文本 -->
+                                <span>
+                                    <h1>南京夫子庙</h1>
+                                    龙井虾仁选用活大河虾，配以清明节前后的龙井新茶烹制，在杭菜中堪称一绝。据说，清乾隆皇帝下江南时，正好是清明节。他游览了西湖龙井，茶农将新茶进献给他，他带回行宫，御厨在炒“玉白虾仁”时放进茶叶，烧出了这道名菜。
+                                </span>
+                                <!-- end_文本 -->
+                                <!-- 按钮：点击更多 -->
+                                <a href="#" class="btn_more"></a>
+                                <!-- end_按钮：点击更多 -->
+                            </li>
+                            <!-- end_右侧文本+按钮 -->
+                        </ul>
+                        <!-- end_南京 -->
+                        <!-- 黄山 -->
+                        <ul class="cont">
+                            <!-- 左侧图片 -->
+                            <li class="pic">
+                                <img src="images/in/bhs.png">
+                            </li>
+                            <!-- end_左侧图片 -->
+                            <!-- 右侧文本+按钮 -->
+                            <li class="txt">
+                                <!-- 文本 -->
+                                <span>
+                                    <h1>安徽黄山</h1>
+                                    龙井虾仁选用活大河虾，配以清明节前后的龙井新茶烹制，在杭菜中堪称一绝。据说，清乾隆皇帝下江南时，正好是清明节。他游览了西湖龙井，茶农将新茶进献给他，他带回行宫，御厨在炒“玉白虾仁”时放进茶叶，烧出了这道名菜。
+                                </span>
+                                <!-- end_文本 -->
+                                <!-- 按钮：点击更多 -->
+                                <a href="#" class="btn_more"></a>
+                                    <!-- end_按钮：点击更多 -->
+                            </li>
+                            <!-- end_右侧文本+按钮 -->
+                        </ul>
+                        <!-- end_黄山 -->
+                    </div>
+                    <!-- end_图文区域 -->
+                </div>
+            </div>
+            <!-- end_国内页面 -->
+        </div>
+        <!-- end_必备攻略 -->
+
+        <!-- 精彩图集 -->
+        <div id="nicepic">
+			<!-- 国外页面 -->
+            <div class="outpage"></div>
+            <!-- end_国外页面 -->
+			<!-- 国内页面 -->
+			<div class="inpage">
+                <div class="page">
+                    <!-- 标题 -->
+                    <header class="title"></header>
+                    <!-- end_标题 -->
+                    <!-- 文字导航 -->
+                    <ul class="np_tnav clear">
+                        <li class="np_tnav01"></li>
+                        <li class="np_tnav02"></li>
+                        <li class="np_tnav03"></li>
+                    </ul>
+                    <!-- end_文字导航 -->
+                    <!-- 图片导航 -->
+                    <dl class="np_pnav clear">
+                        <dt>
+                            <img src="images/np_border.png">
+                        </dt>
+                        <dd>
+                            <img src="images/in/np_pnav01.png">
+                        </dd>
+                        <dd>
+                            <img src="images/in/np_pnav02.png">
+                        </dd>
+                        <dd>
+                            <img src="images/in/np_pnav03.png">
+                        </dd>
+                        <dd>
+                            <img src="images/in/np_pnav04.png">
+                        </dd>
+                        <dd>
+                            <img src="images/in/np_pnav05.png">
+                        </dd>
+                        <dd>
+                            <img src="images/in/np_pnav06.png">
+                        </dd>
+                    </dl>
+                    <!-- end_图片导航 -->
+                    <!-- 大图+文字 -->
+                    <div class="np_bpic">
+                        <div class="np_bpic01 np_current">
+                            <img src="images/in/np_bpic01.png">
+                            <p>南京夫子庙</p>
+                        </div>
+                        <div class="np_bpic02">
+                            <img src="images/in/np_bpic02.png">
+                            <p>南京鸡鸣寺和紫峰大厦</p>
+                        </div>
+                        <div class="np_bpic03">
+                            <img src="images/in/np_bpic03.png">
+                            <p>黄山</p>
+                        </div>
+                        <div class="np_bpic04">
+                            <img src="images/in/np_bpic04.png">
+                            <p>安徽宏村建筑群和南湖</p>
+                        </div>
+                        <div class="np_bpic05">
+                            <img src="images/in/np_bpic05.png">
+                            <p>杭州西湖</p>
+                        </div>
+                        <div class="np_bpic06">
+                            <img src="images/in/np_bpic06.png">
+                            <p>上海外滩</p>
+                        </div>
+                    </div>
+                    <!-- end_大图+文字 -->
+                </div>
+            </div>
+            <!-- end_国内页面 -->
+        </div>
+        <!-- end_精彩图集 -->
+
+        <!-- 本月爆款 -->
+        <div id="hot">
+			<!-- 国外页面 -->
+            <div class="outpage"></div>
+            <!-- end_国外界面 -->
+			<!-- 国内页面 -->
+			<div class="inpage">
+                <div class="page">
+                    <!-- 标题 -->
+                    <header class="title"></header>
+                    <!-- end_标题 -->
+                    <!-- 顶部大框内容 -->
+                    <div class="tophot">
+                        <!-- 左侧内容 -->
+                        <div class="leftbg">
+                            <h1>【上海/杭州】</h1>
+                            <h2>珠海直飞2-10天自由行</h2>
+                            <h4>（往返含税机票+上海迪士尼门票）</h4>
+                            <ul>
+                                <li>&yen;</li>
+                                <li>1519</li>
+                                <li>起</li>
+                            </ul>
+                            <a href="#"></a>
+                        </div>
+                        <!-- end_左侧内容 -->
+                        <!-- 右侧内容 -->
+                        <ul class="rightbg">
+                            <li>
+                                <div></div>
+                                <h1>暑期出行：</h1>
+                                <h3>精选8月出行日期，暑期亲子欢乐游！</h3>
+                            </li>
+                            <li>
+                                <div></div>
+                                <h1>畅玩乐园：</h1>
+                                <h3>产品附带迪士尼乐园门票，畅游迪士尼奇幻王国！</h3>
+                            </li>
+                            <li>
+                                <div></div>
+                                <h1>必玩体验：</h1>
+                                <h3>迪士尼乐园，上海外滩，杭州西湖</h3>
+                            </li>
+                            <li>
+                                <div></div>
+                                <h1>饕餮美食：</h1>
+                                <h3>松云楼的八宝饭、桂花厅的鸽蛋圆子</h3>
+                            </li>
+                        </ul>
+                        <!-- end_右侧内容 -->
+                    </div>
+                    <!-- end_顶部大框内容 -->
+                    <!-- 6个具体目的地 -->
+                    <ul class="sist clear">
+                        <li>
+                            <img src="images/in/hotpro_01.png">
+                            <h1>【黄山】广州直飞3天2晚自由行</h1>
+                            <h3>（往返含税机票+2晚舒适酒店）</h3>
+                            <div class="clear">
+                                <ul class="prise">
+                                    <li>&yen;</li>
+                                    <li>1299</li>
+                                    <li>起</li>
+                                </ul>
+                                <a href="#"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/in/hotpro_02.png">
+                            <h1>【南京】广州直飞3天2晚自由行</h1>
+                            <h3>（往返含税票+2晚精品酒店）</h3>
+                            <div>
+                                <ul class="prise">
+                                    <li>&yen;</li>
+                                    <li>1399</li>
+                                    <li>起</li>
+                                </ul>
+                                <a href="#"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/in/hotpro_03.png">
+                            <h1>【杭州】广州直飞3天自由行</h1>
+                            <h3>（含往返含税机票+1晚杭州城中香格里拉大酒店）</h3>
+                            <div>
+                                <ul class="prise">
+                                    <li>&yen;</li>
+                                    <li>1679</li>
+                                    <li>起</li>
+                                </ul>
+                                <a href="#"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/in/hotpro_04.png">
+                            <h1>【上海】沈阳直飞2~10天自由行</h1>
+                            <h3>（往返含税机票+上海迪士尼门票）</h3>
+                            <div>
+                                <ul class="prise">
+                                    <li>&yen;</li>
+                                    <li>1759</li>
+                                    <li>起</li>
+                                </ul>
+                                <a href="#"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/in/hotpro_05.png">
+                            <h1>【杭州】哈尔滨直飞2~10天自由行</h1>
+                            <h3>（往返含税机票+2晚高级酒店）</h3>
+                            <div>
+                                <ul class="prise">
+                                    <li>&yen;</li>
+                                    <li>2749</li>
+                                    <li>起</li>
+                                </ul>
+                                <a href="#"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/in/hotpro_06.png">
+                            <h1>【杭州】乌鲁木齐直飞2~10天自由行</h1>
+                            <h3>（往返含税机票+2晚高级酒店）</h3>
+                            <div>
+                                <ul class="prise">
+                                    <li>&yen;</li>
+                                    <li>3579</li>
+                                    <li>起</li>
+                                </ul>
+                                <a href="#"></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end_6个具体目的地 -->
+                    <p>以上价格仅供参考，请以实际预订为准</p>
+                </div>
+            </div>
+            <!-- end_国内页面 -->
+        </div>
+        <!-- end_本月爆款 -->
+
+        <!-- 热门推荐 -->
+        <div id="recommend">
+			<!-- 国外页面 -->
+            <div class="outpage"></div>
+            <!-- end_国外页面 -->
+			<!-- 国内页面 -->
+            <div class="inpage">
+                <div class="page">
+                    <!-- 标题 -->
+                    <header class="title"></header>
+                    <!-- end_标题 -->
+                    <!-- 4个具体目的地 -->
+                    <ul class="sist clear">
+                        <li>
+                            <img src="images/in/recom_pro_01.png">
+                            <h1>【厦门】广州直飞4天自由行</h1>
+                            <h3>（往返含税机票+2晚豪华酒店）</h3>
+                            <div class="clear">
+                                <ul class="prise">
+                                    <li>&yen;</li>
+                                    <li>999</li>
+                                    <li>起</li>
+                                </ul>
+                                <a href="#"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/in/recom_pro_02.png">
+                            <h1>【长白山】沈阳直飞2~9天自由行</h1>
+                            <h3>（往返含税票+2晚高级酒店）</h3>
+                            <div>
+                                <ul class="prise">
+                                    <li>&yen;</li>
+                                    <li>1419</li>
+                                    <li>起</li>
+                                </ul>
+                                <a href="#"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/in/recom_pro_03.png">
+                            <h1>【西安】广州直飞3天周末有</h1>
+                            <h3>（往返含税机票+2晚格兰云天酒店）</h3>
+                            <div>
+                                <ul class="prise">
+                                    <li>&yen;</li>
+                                    <li>1739</li>
+                                    <li>起</li>
+                                </ul>
+                                <a href="#"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/in/recom_pro_04.png">
+                            <h1>【北京】之海直飞2~10天自由行</h1>
+                            <h3>（往返含税机票+2晚高级酒店）</h3>
+                            <div>
+                                <ul class="prise">
+                                    <li>&yen;</li>
+                                    <li>2469</li>
+                                    <li>起</li>
+                                </ul>
+                                <a href="#"></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end_4个具体目的地 -->
+                    <p>以上价格仅供参考，请以实际预订为准</p>
+                    <header class="title line"></header>
+                    <!-- 热门酒店+签证 -->
+                    <ul class="server">
+                        <li class="hotel">
+                            <a href="#">
+                                <span>
+                                    <h4>热门酒店</h4>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="passport">
+                            <a href="#">
+                                <span>
+                                    <h4>热门签证</h4>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- end_热门酒店+签证 -->
+                </div>
+            </div>
+            <!-- end_国内界面 -->
+        </div>
+        <!-- end_热门推荐 -->
+    </section>
+    <!-- end_内容区域 -->
+
+    <!-- 页脚区域 -->
+    <footer id="footer">
+        <ul class="reserve clear">
+            <li>
+                <a href="#">
+                    <img src="images/ticket.png">
+                    <p>机票预订</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/hotel.png">
+                    <p>酒店预订</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/taxi.png">
+                    <p>租车预订</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/holiday.png">
+                    <p>度假预订</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/order.png">
+                    <p>我的订单</p>
+                </a>
+            </li>
+        </ul>
+        <div class="copr">
+            <div class="clear bg">
+                <p>Copyright(C)1997-2017中国南方航空股份有限公司 版权所有 粤ICP备05053330号</p>
+                <ul>
+                    <li>
+                        <a href="#">关于南航</a>
+                    </li>
+                    <li>
+                        <a href="#">投资者关系</a>
+                    </li>
+                    <li>
+                        <a href="#">预订须知</a>
+                    </li>
+                    <li>
+                        <a href="#">常见问题</a>
+                    </li>
+                    <li>
+                        <a href="#">联系我们</a>
+                    </li>
+                    <li>
+                        <a href="#">"十分"关爱基金会</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- end_页脚区域 -->
+
+</body>
+
+</html>
