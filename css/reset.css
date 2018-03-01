@@ -1,0 +1,33 @@
+/*css重置*/
+body,ul,li,a,input,button,p,h1,h2,h3,h4,dl,dt,dd{
+    margin:0;
+    padding:0;
+    font-size: 12px;
+    font-family: "微软雅黑",Arial, Helvetica, sans-serif;
+}
+ul,li{
+    list-style: none;
+}
+.clear::after,#hot ul.rightbg li:after{
+    content: "";
+    display:block;
+    clear: both;
+}
+img{
+    vertical-align: bottom;    
+}
+a{
+    text-decoration: none;
+    color:#000;
+}
+input{
+    outline: none;
+}
+button{
+    background:none;
+    border:none;
+    outline: none;
+}
+h1,h2,h3,h4{
+    font-weight: normal;
+}
